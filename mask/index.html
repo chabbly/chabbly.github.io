@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Dance Machine</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">Charlotte Bradley</a>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Dance Machine Prototype</h1>
+            <p class="lead">Learning technical skills for designing and intervening in cyber-physical systems.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Inspired by the work of Ken Thaiday Senior, my Dance Machine is a first pass at imagining future human-machine collaboration in the performing arts. It is a mask that guides its wearer through a random score of target heart rates
+                    (BPM).
+                    Embedded RGB LEDs display target and current BPM on the left and right side of the mask as blocks of colour. The wearer is encouraged to improvise their way between the target BPMs chosen by the mask through movement or speech. By
+                    choosing a mask, I am positioning my prototype as part of an ancient and continuous human history of expressive self-augmentation technologies.</p>
+                <p>The Dance Machine Prototype and this write up were created as an assessment piece for the lab component of the pilot <a href="https://3ainstitute.cecs.anu.edu.au/" target="_blank">3Ai Masters program</a> at the Australian National
+                    University.<p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Skills & Experience</h5>
+                        <p class="card-text"> <strong>Hardware</strong>
+                            <ul>
+                                <li>Arduino Uno microcontroller
+                                    <ul>
+                                        <li>SparkFun Particle Sensor, Polar T34 Heart Rate Transmitter, Grove Ear-clip heart rate sensor</li>
+                                        <li>RGB LEDs</li>
+                                    </ul>
+                                <li>Electronics</li>
+                                <li>Ultimaker 2+</li>
+                            </ul>
+                            <strong>Software</strong>
+                            <ul>
+                                <li>Autodesk Fusion 360</li>
+                                <li>C/C++</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <figure class="figure">
+                    <img src="img/mask_printer.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Designer Neri Oxman's "Vespers" death masks. Source: <a href="https://www.media.mit.edu/projects/vespers-iii/overview/">MIT Media Lab.</a></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h3>Masks</h3>
+                <p>Masks are an ancient technology of human expression and augmentation. The <a href="https://news.nationalgeographic.com/news/2014/06/140610-oldest-masks-israel-museum-exhibit-archaeology-science/">oldest masks found</a> are from the
+                    Neolithic era, 9,000 years ago. They have served many different functions across time and cultures, as tools of religion and ritual, performance, war, politics, and more. Masks have allowed us to do and say things we otherwise
+                    couldn’t. They have made us into people and things we are not. They are an <strong>interface</strong> between us and another world. In this sense, masks may have much to teach us about human-computer interaction in cyber-physical
+                    systems.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/ancient_masks.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Stone mask from the Neolithic period. Source: <a href="https://www.imj.org.il/en/">The Israel Museum</a>.</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/new_masks.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Designer Neri Oxman's "Vespers" death masks. Source: <a href="https://www.media.mit.edu/projects/vespers-iii/overview/">MIT Media Lab.</a></figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/zambia.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Contemporary Zambian masks. Source: <a href="http://www.galembo.com/">Photographer Phyllis Galembo</a>.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h3>Dr Ken Thaiday Senior’s Dance Machines</h3>
+                <p><a href="https://www.australiacouncil.gov.au/arts-in-daily-life/artist-stories/dr-ken-thaiday-senior/">Dr Ken Thaiday Senior</a> is a Torres Strait Islander artist from Erub (Darnley) Island of the Meriam Mir people. He is
+                    a
+                    multidisciplinary artist whose work combines kinetic sculpture, dance and song <a href="https://theconversation.com/faith-dance-and-truth-the-art-of-2017-red-ochre-award-winner-ken-thaiday-snr-78181"> rooted in his
+                        cultural
+                        tradition and spiritual beliefs.</a> Thaiday is best known for his intricate articulated masks or ‘dance machines’, wrought in a combination of traditional and contemporary materials. One recurring icon is the Beizam
+                    (hammerhead shark), Thaiday’s family totem, which features in <a href="http://jasonchristopherartist.com/?portfolio_item=beizam-triple-hammer-head-shark-2016"> his collaboration with non-Indigenous artist Jason
+                        Christopher.</a>
+                    Beizam Triple Hammerhead Shark (2016) explores the effect of automation and computation on traditional artistic practice. For me, Thaiday’s work is a contemporary window into the long and culturally diverse history of
+                    masks as a
+                    technology of expressive augmentation.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/kt_Beizam_trad.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Beizam dance mask (2005) by Ken Thaiday Snr. Source: <a href="https://www.ipswichartgallery.qld.gov.au/ken-thaiday-snr-2/">Ipswich Art Gallery</a>.</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/kt_Beizam_christopher.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Beizam Triple Hammerhead Shark (2016) by Ken Thaiday Snr and Jason Christopher. Source: <a href="http://jasonchristopherartist.com/?portfolio_item=beizam-triple-hammer-head-shark-2016">Jason
+                            Christopher</a>.</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/kt_frigate_bird.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Frigate Bird Headdress (2014) by Ken Thaiday Snr. Source: <a href="https://nga.gov.au/defyingempire/artists.cfm?artistirn=19055">National Gallery of Australia</a>.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h3>A challenging process</h3>
+                <h5>Defining scope</h5>
+                <p>One the biggest challenges I faced was defining and limiting the scope of my project. The brief for the assignment was broad, and I had no reference for the skills or time required. My initial plan was for an Affect
+                    Machine: a mask
+                    with an embedded screen that learns how to trigger specific emotions based on a viewer’s physiological response.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 pb-3">
+                <img src="img/initial_sketch.jpg" class="img-fluid rounded" alt="Responsive image">
+            </div>
+            <div class="col-6">
+                <ul>
+                    <li>A mask with an embedded screen displays images aimed at eliciting an emotional response from its viewer.</li>
+                    <li>A sensor or sensors monitor the viewer’s experience, e.g. heart rate, skin conductance, or facial affect recognition.</li>
+                    <li>A learning program cycles through image groups to find a group that has the desired effect, e.g. positive image groups ‘beautiful landscapes’ or negative image groups like ‘people grieving’.</li>
+                    <li>Once a target group has been identified, the program seeks to further increase or decrease the viewer’s heart rate, for example, by exploring other images in the set.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Sketching out the system like this made me rethink the use of distressing imagery. In particular, I felt uncomfortable using photographs of other people’s grief or misfortune as a means to an end. Another artist
+                    whose work inspired me throughout this process, Adam Harvey, has explored the exploitative use of faces capture ‘in the wild’ in his creative research project on face recognition image datasets, <a
+                        href="https://megapixels.cc/">Megapixels</a>. In my imagined system, as in the datasets investigated by Harvey and his collaborator Jules LaPlace, individual identity and experience is taken without permission,
+                    laundered through a process of datafication, and recirculated in new marketplaces.</p>
+
+                <p>On a more practical level, I also realised that this was far from the desired minimum viable product given my limited experience with the technology involved. So I stripped the idea back to its core elements: a mask
+                    that
+                    responds
+                    to the heart rate of its viewer. I also decided to work with the Arduino Uno, which I had already spent some time coming to grips with. These decisions would lead me further down the path to my final product.</p>
+
+                <p>Beyond the removal of the screen, another important deletion to note is the use of heart rate as a proxy for emotional response, as opposed to a measure in its own right. This was based partly on <a
+                        href="https://www.affective-science.org/pubs/2016/barrett-navigating-2016.pdf"> research</a> that problematised the idea of measuring emotions with simple physiological sensors, and partly to further simplify
+                    the
+                    brief.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h5>Choosing a sensor</h5>
+                <p>I began using the <a href="https://learn.sparkfun.com/tutorials/max30105-particle-and-pulse-ox-sensor-hookup-guide/all">SparkFun Particle Sensor</a>, which we had experimented with as a heart rate sensor in the lab.
+                    Attempting to
+                    measure heart rate optically proved to be unreliable. The nature of the breakout board made it difficult to hold your finger in place and get a consistent signal. When it was received, the signal required
+                    significant
+                    processing to
+                    approximate heart rate.</p>
+
+                <p>Next, I experimented with the task-specific <a href="https://www.adafruit.com/product/1077">Polar T34 Heart Rate Transmitter</a>. While the signal was more reliable, I found the chest strap cumbersome and still
+                    inconsistent.</p>
+
+                <p>Finally, I settled on the <a href="https://core-electronics.com.au/grove-ear-clip-heart-rate-sensor-seeed-studio.html">Grove ear-clip heart rate sensor</a>. Not only was the signal more reliable again, the light
+                    weight of
+                    the
+                    ear-clip and its position close to the mask made better sense in the overall design.</p>
+
+                <p>This experience drove home the point that the choice of sensor in a cyber-physical system is by no means an easy one. Trade-offs must be made between availability, cost, reliability, and suitability to context.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h5>Creating (sourcing) the mask</h5>
+                <p>I was interested in experimenting with 3D printing for this project. My intention was to create my own object to print using Autodesk Fusion 360. I had successfully created some small 3D models earlier in the lab,
+                    and was
+                    initially
+                    keen to extend myself on a more ambitious project. I learned the hard way how steep the learning curve is on this specialist CAD software. I tried and failed several times over several days to produce a printable
+                    object.
+                    Unfortunately, the flexibility in the program’s modelling environment means that it is possible to produce irrational shapes that can’t be resolved into a polygon mesh for printing. At least I think that was the
+                    problem!
+                    Finally,
+                    I decided to use an <a href="https://www.thingiverse.com/thing:174840">existing model from Thingyverse for my prototype</a>. The exact appearance of the mask was immaterial to my central interest in dynamic between
+                    machine,
+                    performer and audience.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/Moon_mask.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">A selection of failed attempts...</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/Minimalist_mask.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption"></figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/Armory_mask.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption"></figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>We have been exposed to many different tools in the 3Ai lab. It is easy to get carried away with the new and lose sight of where you want to get to. My experience with Autodesk Fusion 360 reminded me that, when
+                    introduced
+                    to a new
+                    skill or technology, it is important to stop and question whether or not this is a skill you actually want, or if the technology really serves the purpose of the product you’re building.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h5>Approach to programming</h5>
+                <p>I took a deliberate and incremental approach to programming my Dance Machine. I began with a series of tutorial projects loosely related to my end goal, and gradually built up the final code. The Arduino is
+                    programmed using
+                    its own
+                    integrated development environment (IDE), and the ‘arduino language’ is a set of C/C++ functions. While I have some experience with other languages, this was a new skill for me and a one that I am keen to pursue.
+                    My
+                    annotated code
+                    is here.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h5>Struggling with colour</h5>
+                <p>In designing the program to run the mask, one particular challenge was working out how to relate colours to heart rate. I began by exploring options that would associate the three colour channels with low, medium
+                    and high
+                    BPM
+                    bands. e.g.</p>
+                <ul>
+                    <li>Activating a different channel for different bands of heart rate:
+                        <ul>
+                            <li>Light to dark green for 40-90 BPM (resting heart rate)
+                                <ul>
+                                    <li>i.e. mapping 40, 90 to 55, 255 in a 1:5 ratio</li>
+                                </ul>
+                            </li>
+                            <li>Light to dark blue for 91-140 BPM (active heart rate)</li>
+                            <li>Light to dark red for 140 + BPM (very active heart rate)</li>
+                        </ul>
+                    <li>Developing on the above, an overlapping map for more gradual transitions:</li>
+                </ul>
+                <img src="img/colour_graph.png" class="img rounded" alt="Responsive image">
+                <p>However, this approach did not provide enough differentiation between between heart rates and suffered from either a sudden step change at arbitrary points or a tendency to muddiness.</p>
+
+                <p>Eventually, I realised that the mask was essentially a data visualisation. It needed to show trends and summarise its input rather than display every single unit change in BPM. In my earlier approaches, I had been
+                    seeking
+                    to
+                    directly map BPM to a colour scale. But now I wanted to map small brackets of BPM to a more distinct diverging scale. I looked to <a href="http://colorbrewer2.org/#type=diverging&scheme=PRGn&n=9">ColorBrewer</a>
+                    for
+                    inspiration. Unfortunately, I failed to appreciate how poorly colours would
+                    translate from my screen to the LEDs. In particular, the diffuseness of the light means that more subtle changes failed to register. Finally, I wired up 3 potentiometers to one RGB LED and used these to manually
+                    mix a
+                    colour scale
+                    approximating the one I chose in ColorBrewer.</p>
+                <figure class="figure">
+                    <img src="img/colour_transition.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Experimenting with potentiometers.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h5>Losing heart</h5>
+                <p>I found the experience with Fusion 360 really demoralising. I sank a lot of time into trying to make it work and had lost sight of my end goal. I realised that I had failed to adequately redefine my project after
+                    stripping
+                    it back to its bare essentials. In my original plan, there was a system defining feedback loop between the imagery displayed on the mask and the viewer. Now that the display had been replaced with colour, though,
+                    this
+                    feedback loop had become a one way transmission from the viewer to the mask. I realised that the person wearing the mask would need to be a more active participant the system. I spoke to my colleague Zaiga Thomann
+                    about my
+                    problem, and she helped me re-develop the idea into its final format. This reminded me that bouncing ideas off a third party is an excellent way to break down a problem and smash through creative blocks.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h5>Pulling it all together</h5>
+                <p>Having redefined the project, the final step was to pull it all together. It wasn’t until this stage - moving from a prototype breadboard to the prototype mask - that I realised I had ordered common anode LEDs, but
+                    had been
+                    planning and programming for common anode. This didn’t require much tweaking, but it was a timely reminder that the devil is in the details.</p>
+
+                <p>As a further example of this, I had not anticipated how fiddly it would be to solder the LEDs into banks embedded in the mask. Perhaps more significantly, I also hadn’t reckoned with difference in circuit design for
+                    controlling two single LEDs on my breadboard and two banks of 12 LEDs each in my mask. Once again, I relied on the assistance of my colleagues Oliva Reeves and Matthew Phillips to design the circuit for the
+                    prototype
+                    proper. This was a fantastic learning opportunity for me, having never worked with electronics before.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <figure class="figure">
+                    <img src="img/sketch_diagram.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Going from this...</figcaption>
+                </figure>
+            </div>
+            <div class="col-6">
+                <figure class="figure">
+                    <img src="img/fritz_diagram.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">...to this...</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h3>Final reflections</h3>
+                <p>The 3Ai has organised itself a set of five critical questions relating to cyber-physical systems. I’ve reflected on three areas of interest in this regard:</p>
+                <ul>
+                    <li><strong>Autonomy.</strong> My Dance Machine has a very low-level kind of autonomy in that it acts alone in updating the goal BPM. At present this is a random function. As such, its autonomy is an irrational
+                        force in
+                        the system. Depending on the bounds set (minimum and maximum BPM), this could lead to either a very dull or very taxing performance for the wearer. By differentiating autonomy from agency, are we pointing to
+                        the need
+                        to tightly define autonomous functions?</li>
+                    <li><strong>Agency and Interfaces.</strong> I am really interested in what the history of theatre has to teach us about robotic agency. The Dance Machine speaks to this interest. Just as an actor is given a script
+                        to
+                        perform, and can be thought of as an agent of the playwright or director, the mask runs on a predetermined script. Yet it is the actor who builds a relationship with their audience. Their agency emerges in the
+                        interplay between their performance, a message, and audiences’ receipt of that message. In the case of the Dance Machine, who builds the relationship? Is it the designer, the mask, or the body wearing it? Is it
+                        useful
+                        to ask how agency emerges between computers and humans in the world?</li>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
