@@ -7,20 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
 
     <title>Dance Machine</title>
 </head>
+<style>
+    .jumbotron {
+        background-image: url('img/maskbanner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 400px;
+    }
+</style>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">Charlotte Bradley</a>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="../img/icon-nb.png" width="30" height="30" class="d-inline-block align-top mr-2" alt=""> <-- Charlotte Bradley</a>
     </nav>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Dance Machine Prototype</h1>
-            <p class="lead">Learning technical skills for designing and intervening in cyber-physical systems.</p>
         </div>
+    </div>
+
+    <div class="container">
+        <h1 class="display-4">Dance Machine Prototype</h1>
+        <h2 class="lead">Learning technical skills for designing and intervening in cyber-physical systems.</h2>
     </div>
 
     <div class="container">
@@ -30,6 +44,30 @@
                     (BPM).
                     Embedded RGB LEDs display target and current BPM on the left and right side of the mask as blocks of colour. The wearer is encouraged to improvise their way between the target BPMs chosen by the mask through movement or speech. By
                     choosing a mask, I am positioning my prototype as part of an ancient and continuous human history of expressive self-augmentation technologies.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/mask_blank.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Neutral mask.</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/mask_goal.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Target BPM represented by right colour block. Current BPM on left.</figcaption>
+                </figure>
+            </div>
+            <div class="col-4 pt-3">
+                <figure class="figure">
+                    <img src="img/mask_achieved.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption">Target BPM met. Buzzer sounds to alert wearer. Mask will now choose a new target BPM. Buzzer plays high tone for higher than current BPM, low tone for lower.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 <p>The Dance Machine Prototype and this write up were created as an assessment piece for the lab component of the pilot <a href="https://3ainstitute.cecs.anu.edu.au/" target="_blank">3Ai Masters program</a> at the Australian National
                     University.<p>
             </div>
@@ -64,7 +102,7 @@
             <div class="col-4">
                 <figure class="figure">
                     <img src="img/mask_printer.jpg" class="figure-img img-fluid rounded" alt="...">
-                    <figcaption class="figure-caption">Designer Neri Oxman's "Vespers" death masks. Source: <a href="https://www.media.mit.edu/projects/vespers-iii/overview/">MIT Media Lab.</a></figcaption>
+                    <figcaption class="figure-caption">Printing prototype mask on Ultimaker 2+</figcaption>
                 </figure>
             </div>
         </div>
@@ -220,7 +258,7 @@
                     Unfortunately, the flexibility in the program’s modelling environment means that it is possible to produce irrational shapes that can’t be resolved into a polygon mesh for printing. At least I think that was the
                     problem!
                     Finally,
-                    I decided to use an <a href="https://www.thingiverse.com/thing:174840">existing model from Thingyverse for my prototype</a>. The exact appearance of the mask was immaterial to my central interest in dynamic between
+                    I decided to use an <a href="https://www.thingiverse.com/thing:174840">existing model from Thingyverse for my prototype</a>. The exact appearance of the mask was immaterial to my central interest in the dynamic between
                     machine,
                     performer and audience.</p>
             </div>
@@ -266,8 +304,8 @@
                     its own
                     integrated development environment (IDE), and the ‘arduino language’ is a set of C/C++ functions. While I have some experience with other languages, this was a new skill for me and a one that I am keen to pursue.
                     My
-                    annotated code
-                    is here.</p>
+                    <a href="https://github.com/chabbly/dancemachine">annotated code
+                        is here</a>.</p>
             </div>
         </div>
     </div>
@@ -359,7 +397,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col pt-5">
+            <div class="col py-5">
                 <h3>Final reflections</h3>
                 <p>The 3Ai has organised itself a set of five critical questions relating to cyber-physical systems. I’ve reflected on three areas of interest in this regard:</p>
                 <ul>
